@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNÇÃO SINCRONA</title>
+</head>
+<body>
+    <p>Calculadora</p>
+    
+    <input type="submit" value="calcular" onclick="calcular()">
+
+    <p id="resultado"></p>
+
+    <script>
+
+        function calcular() {
+            let n1 = 20
+            let n2 = 20
+
+            soma = n1 + n2;
+
+            exibir(soma);
+        }
+
+        function exibir(soma) {
+            document.getElementById("resultado").innerHTML = `Minha soma é: ${soma}`;
+        }
+    </script>
+</body>
+</html>
